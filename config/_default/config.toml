@@ -16,3 +16,6 @@ disqusShortname = "chrisdbhr"
 
 [pagination]
 pagerSize = 9
+
+[params]
+  favicon = "https://chrisjogos.com/favicon/favicon.ico"
