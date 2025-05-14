@@ -3,7 +3,7 @@ title: Localization - How my game is translated to 14+ languages with almost no 
 description: How I keep my game supporting 14+ languages with free options and Unity official Localization solution.
 slug: localization---how-my-game-is-translated
 date: 2023-03-04
-image: 2.webp
+image: 0.webp
 categories:
     - Article
 tags:
