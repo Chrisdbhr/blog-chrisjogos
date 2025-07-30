@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>QA on ChrisJogos Blog</title><link>https://blog.chrisjogos.com/tags/qa/</link><description>Recent content in QA on ChrisJogos Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 10 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.chrisjogos.com/tags/qa/index.xml" rel="self" type="application/rss+xml"/><item><title>Showcasing Automated Testing Mastery in Unity</title><link>https://blog.chrisjogos.com/p/showcasing-automated-testing-in-unity/</link><pubDate>Thu, 10 Oct 2024 00:00:00 +0000</pubDate><guid>https://blog.chrisjogos.com/p/showcasing-automated-testing-in-unity/</guid><description>&lt;img src="https://blog.chrisjogos.com/0.webp" alt="Featured image of post Showcasing Automated Testing Mastery in Unity" />&lt;h1 id="showcasing-automated-testing-mastery-in-unity">Showcasing Automated Testing Mastery in Unity
+&lt;/h1>&lt;p>This portfolio highlight dives into the automated testing framework I built for an endless-runner project in Unity. It provides a concise overview of the system’s architecture, achievements, and real-world impact—no step-by-step tutorial. For an in-depth walkthrough complete with live demos, watch the full video at the end.&lt;/p>
+&lt;hr>
+&lt;h2 id="a-multi-layer-test-architecture">A Multi-Layer Test Architecture
+&lt;/h2>&lt;p>I architected a three-layer approach that catches bugs at every level and keeps development moving at full speed:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Unit Tests&lt;/strong>&lt;br>
+Verify individual classes and methods in isolation, such as player movement logic or obstacle spawning.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Integration Tests&lt;/strong>&lt;br>
+Validate interactions between systems, for example, ensuring collecting a power-up correctly updates both score and UI.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Visual Validation&lt;/strong>&lt;br>
+Automate screenshot comparisons to detect unexpected changes in sprites, UI layouts, or camera framing.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://blog.chrisjogos.com/imgs/test-architecture.png"
+loading="lazy"
+alt="Test Architecture Diagram"
+>&lt;br>
+&lt;em>High-level overview of unit, integration, and visual validation layers.&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://blog.chrisjogos.com/imgs/video-screenshot.png"
+loading="lazy"
+alt="Video Screenshot: Test Architecture in Action"
+>&lt;br>
+&lt;em>Screenshot from the video illustrating the test architecture at runtime.&lt;/em>&lt;/p>
+&lt;hr>
+&lt;h2 id="key-achievements">Key Achievements
+&lt;/h2>&lt;p>This framework transformed our development workflow and delivered measurable benefits:&lt;/p>
+&lt;ul>
+&lt;li>Achieved over 80% automated code coverage, reducing manual QA time by 60%.&lt;/li>
+&lt;li>Caught critical regressions before they reached playtests, slashing bug-fix turnaround by 30%.&lt;/li>
+&lt;li>Integrated into CI/CD so every commit triggers a full test suite—no surprises in builds.&lt;/li>
+&lt;li>Enabled confident refactors and feature rollouts, even under tight deadlines.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://blog.chrisjogos.com/imgs/test-dashboard.png"
+loading="lazy"
+alt="Test Results Dashboard"
+>&lt;br>
+&lt;em>Sample CI dashboard showing green lights for unit, integration, and visual tests.&lt;/em>&lt;/p>
+&lt;hr>
+&lt;h2 id="real-world-impact-in-resultarias-on-steam">Real-World Impact in “Resultarias” on Steam
+&lt;/h2>&lt;p>The exact same testing framework powers my Steam release &lt;strong>Resultarias&lt;/strong>, an endless-runner with thousands of daily players. Automated tests run nightly builds, verify performance metrics, and ensure every update meets our quality standards before it goes live.&lt;/p>
+&lt;p>&lt;img src="https://blog.chrisjogos.com/imgs/resultarias-test.png"
+loading="lazy"
+alt="Resultarias Gameplay with Test Overlays"
+>&lt;br>
+&lt;em>In-game overlay showing automated test checkpoints during a Resultarias playthrough.&lt;/em>&lt;/p>
+&lt;hr>
+&lt;h2 id="explore-the-full-video-walkthrough">Explore the Full Video Walkthrough
+&lt;/h2>&lt;p>For detailed code snippets, live test executions, and an end-to-end demo of this system in action, check out the complete showcase video:&lt;/p>
+&lt;p>&lt;a class="link" href="https://youtu.be/Bcl44QiA1H8" target="_blank" rel="noopener"
+>Unity Endless Runner – Automated Tests Showcase (YouTube)&lt;/a>&lt;/p>
+&lt;p>Ready to see every assertion, mock setup, and screenshot comparison in action? Dive into the video and witness how this framework keeps both my endless-runner prototype and &lt;strong>Resultarias&lt;/strong> polished and play-ready.&lt;/p>
+&lt;iframe src="https://store.steampowered.com/widget/2230030" frameborder="0" width="100%" height="190">&lt;a href="https://store.steampowered.com/app/2230030">resultarias on Steam&lt;/a>&lt;/iframe></description></item></channel></rss>
