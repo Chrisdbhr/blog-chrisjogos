@@ -18,7 +18,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.128.0 # Ou a versão que você usa
+      HUGO_VERSION: 0.128.0 
     steps:
       - name: Install Hugo CLI
         run: |
@@ -27,7 +27,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: true # Use 'true' se você tiver submodulos
+          submodules: true 
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
