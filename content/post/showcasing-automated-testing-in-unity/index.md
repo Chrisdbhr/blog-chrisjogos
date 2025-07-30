@@ -1,8 +1,8 @@
 ---
-title: Localization - How my game is translated to 14+ languages with almost no cost
-description: How I keep my game supporting 14+ languages with free options and Unity official Localization solution.
-slug: localization---how-my-game-is-translated
-date: 2023-03-04
+title: Showcasing Automated Testing Mastery in Unity
+description: A portfolio highlight of the automated testing framework I built for an endless-runner project in Unity, showcasing its architecture, achievements, and real-world impact.
+slug: showcasing-automated-testing-in-unity
+date: 2024-10-10
 image: 0.webp
 categories:
     - Article
