@@ -2,12 +2,8 @@
 <header class="article-header">
     {{/* Primeiro, checa se um videoCover foi definido */}}
     {{ if .Params.videoCover }}
-        {{/* SE TIVER UM VÍDEO: 
-            Renderiza a div com uma classe EXTRA: "article-image--video-cover".
-            Este é nosso "gancho" seguro para o CSS.
-        */}}
         <div class="article-image article-image--video-cover">
-            <a href="{{ .RelPermalink }}" aria-label="Link para o artigo {{ .Title }}">
+            <a href="{{ .RelPermalink }}" class="article-image-link" aria-label="Link para o artigo {{ .Title }}">
                 <div class="video-cover-container">
                     <iframe 
                         src="https://www.youtube.com/embed/{{ .Params.videoCover }}?autoplay=1&mute=1&loop=1&playlist={{ .Params.videoCover }}&controls=0&showinfo=0&rel=0" 
@@ -19,10 +15,6 @@
             </a>
         </div>
     {{ else }}
-        {{/* SE NÃO TIVER VÍDEO (IMAGEM NORMAL):
-            Renderiza o HTML original do tema, sem a nossa classe extra.
-            Isso garante que nada quebre na página de arquivos ou em outros locais.
-        */}}
         {{- $image := partialCached "helper/image" (dict "Context" . "Type" "article") .RelPermalink "article" -}}
         {{ if $image.exists }}
             <div class="article-image">

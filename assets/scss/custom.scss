@@ -19,28 +19,139 @@
     }
 }
 
-// ===================================================================
-//  VÍDEO COMO CAPA ("Scale-to-fit") - A NOVA VERSÃO
-// ===================================================================
+// --- Preparação do Card para ser Clicável ---
+.article-list article {
+    border: 2px solid transparent;
+    transition: box-shadow 1s ease, border-color 1s ease;
+}
 
-// PASSO A: Aplica a proporção correta APENAS nas capas de vídeo
+// Agora, definimos o novo efeito de hover.
+.article-list article:hover {
+    box-shadow: var(--shadow-l3);
+    border-color: var(--accent-color);
+    transition: box-shadow 0.1s ease, border-color 0.1s ease;
+}
+
+// --- Vídeo de Capa ---
 .article-image--video-cover {
     aspect-ratio: 16 / 9;
     position: relative;
     overflow: hidden;
 }
 
-// PASSO B: Faz o iframe preencher essa capa
+// O próprio link da imagem/vídeo agora é uma camada clicável
+.article-image-link {
+    display: block;
+    height: 100%;
+    position: relative;
+    z-index: 2; 
+}
+
 .article-image--video-cover iframe {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-
+    min-width: 100%; min-height: 100%;
+    width: auto; height: auto;
     pointer-events: none;
+}
+
+
+// --- Tags e Categorias (Camada Superior) ---
+.article-list article .article-category,
+.article-list article .article-tags {
+    position: relative;
+    z-index: 3; 
+}
+
+// Adiciona `transform` à transição da tag/categoria.
+.article-category a,
+.article-tags a {
+    transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+// E o efeito em si.
+.article-category a:hover,
+.article-tags a:hover {
+    // Opcional: Aumenta um pouco o tamanho da tag para destacá-la.
+    transform: scale(1.1);
+
+    // O tema já escurece o fundo, o que é um ótimo feedback.
+    // Esta linha garante que o comportamento padrão seja mantido.
+    background-color: var(--accent-color-darker);
+}
+
+// ===================================================================
+//  INTERATIVIDADE: HIERARQUIA E EFEITOS DE HOVER
+// ===================================================================
+
+// --- Hierarquia de Camadas para Links (z-index) ---
+.article-list article {
+    position: relative;
+}
+.article-list article .article-title a::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: 1;
+}
+.article-image-link,
+.article-list article .article-category,
+.article-list article .article-tags {
+    position: relative;
+    z-index: 2;
+}
+.article-list article .article-category,
+.article-list article .article-tags {
+    z-index: 3;
+}
+
+// --- Definições Globais de Transição Suave ---
+.article-list article,
+.article-list--compact article,
+.widget a,
+.menu a,
+.menu-social a,
+.article-category a,
+.article-tags a,
+.content ol > li, .content ul > li {
+    transition: all 0.15s ease-in-out;
+}
+
+// --- Efeitos de Hover Específicos ---
+
+// 1. Card de Artigo Principal
+.article-list article {
+    border: 2px solid transparent;
+}
+.article-list article:hover {
+    box-shadow: var(--shadow-l3);
+    border-color: var(--accent-color);
+}
+// 1a. Detalhes do Artigo (efeito filho)
+.article-list article:hover .article-subtitle {
+    color: var(--card-text-color-main);
+}
+
+// 2. Itens de Menu, Listas e Widgets
+.article-list--compact article:hover,
+.widget a:hover,
+.menu a:hover,
+.content ol > li:hover,
+.content ul > li:hover {
+    background-color: var(--card-separator-color);
+}
+.widget a { display: block; } // Garante que o link ocupe toda a área do widget
+
+// 3. Ícones do Menu Social
+.menu-social a:hover {
+    transform: scale(1.15);
+    color: var(--accent-color);
+}
+
+// 4. Tags e Categorias
+.article-category a:hover,
+.article-tags a:hover {
+    transform: scale(1.08);
+    background-color: var(--accent-color-darker);
 }
