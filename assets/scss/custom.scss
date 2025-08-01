@@ -11,17 +11,36 @@
   }
 }
 
-.article-image iframe {
-    position: relative;
-    pointer-events: none;
-    width: 100%;
-    height: 100%;
-}
-
 @media (min-width: 1280px) {
-    body.list:not(.archives) .article-list {
+    .article-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: var(--section-separation);
     }
+}
+
+// ===================================================================
+//  VÍDEO COMO CAPA ("Scale-to-fit") - A NOVA VERSÃO
+// ===================================================================
+
+// PASSO A: Aplica a proporção correta APENAS nas capas de vídeo
+.article-image--video-cover {
+    aspect-ratio: 16 / 9;
+    position: relative;
+    overflow: hidden;
+}
+
+// PASSO B: Faz o iframe preencher essa capa
+.article-image--video-cover iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+
+    pointer-events: none;
 }
