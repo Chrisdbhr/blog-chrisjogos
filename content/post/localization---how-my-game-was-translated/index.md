@@ -21,19 +21,19 @@ With that in mind, I had to find a quick and easy solution to make all possible 
 ## How and wow
 Programming one from scratch is a possibility but since this is a common issue, I had to look for free or open source solutions first. After looking through some git repositories and paid Unity Assets, I ended up finding what I think was the best option: Unity Localization Package. This package is developed and supported by Unity, that’s awesome because I always prefer to use Unity official assets while looking for third party solutions, because I am sure that they will keep it updated and supporting the latest versions of the engine.
 
-![Alt text](1.webp)
+![Unity Localization Package Docs](1.webp)
 
 The neat part of this package is that it can export all the game text in one or more Google Sheets, meaning that I can use Google Translate inside it to translate all texts automatically!
 
 I know Google Translate can lead to some wrong translations but remember that I am a solo-developer working in the game in my free time. This solution is quick and pretty reliable, and I have the support of the community to fix some things that could be better, in the game Discord Server I already have been reached by a Turkish person that helped fix a lot of things!
 
-![Alt text](2.webp)
+![Sheet with translation that the community can comment](2.webp)
 
 ## Conclusion
 
 Making the game available in multiple languages made it appear on foreign websites with that information highlighting it. I believe this is a very good thing, I always get excited when I play a game in my main language (Brazilian Portuguese), and I remember seeing a person with a positive reaction when they saw the game opened automatically already with their language selected!
 
-![Alt text](3.webp)
+![The game with translated prompts](3.webp)
 
 ## About the game
 
