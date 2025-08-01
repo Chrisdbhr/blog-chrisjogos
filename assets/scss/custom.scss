@@ -155,3 +155,28 @@
     transform: scale(1.08);
     background-color: var(--accent-color-darker);
 }
+
+// ===================================================================
+//  AJUSTES DE TIPOGRAFIA
+// ===================================================================
+
+// --- Título e Subtítulo dos Cards de Artigo ---
+.article-title {
+    // O padrão do tema era 2.2rem. Reduzimos para 2.0rem.
+    font-size: 1.8rem;
+
+    @media (min-width: 1280px) {
+        // Em telas grandes, o padrão era 2.4rem. Reduzimos para 2.2rem.
+        font-size: 2.0rem;
+    }
+}
+
+.article-subtitle {
+    // O padrão do tema era 1.75rem. Reduzimos para 1.6rem.
+    font-size: 1.5rem;
+
+    @media (min-width: 1280px) {
+        // Em telas grandes, o padrão era 2.0rem. Reduzimos para 1.7rem.
+        font-size: 1.7rem;
+    }
+}
