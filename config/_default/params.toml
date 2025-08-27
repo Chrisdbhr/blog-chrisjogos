@@ -30,8 +30,8 @@ readingTime = true
 enabled = true
 
 [article.mermaid.theme]
-light = default
-dark = dark
+light = "default"
+dark = "dark"
 
 [article.license]
 enabled = true
